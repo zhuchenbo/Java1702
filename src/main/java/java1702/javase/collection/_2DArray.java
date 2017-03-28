@@ -13,7 +13,8 @@ public class _2DArray {
         int[][] ints = new int[3][5];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 5; j++) {
-                System.out.println(ints[i][j]+"\t");
+                ints[i][j] = i + j;
+                System.out.print(ints[i][j] + "\t");
             }
             System.out.println();
         }
