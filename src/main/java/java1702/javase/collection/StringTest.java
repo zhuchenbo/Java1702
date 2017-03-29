@@ -28,7 +28,7 @@ public class StringTest {
         System.out.println(str.toLowerCase());
         System.out.println(str.toUpperCase());
 
-        ///   System.out.println("итальянский".toLowerCase());
+        //   System.out.println("итальянский".toLowerCase());
         //  System.out.println("итальянский".toUpperCase());
 
         String s3 = "HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello";
