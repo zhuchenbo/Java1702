@@ -18,7 +18,7 @@ public class StringBufferTest {
         System.out.println(stringBuffer.append(true).append(123));
         System.out.println(stringBuffer.delete(4,6));
 
-        System.out.println(stringBuffer.insert(4,false));
+      System.out.println(stringBuffer.insert(4,false));
 
         System.out.println(stringBuffer.reverse());
 
