@@ -17,6 +17,13 @@ public class StringTest {
             s = "hello";
             System.out.println(s);
 
+
+
+
+
+
+
+
             // GC Garbage Collection 垃圾回收机制
             byte[] bytes = new byte[10];
             String s1 = ""; // deprecated 弃用\ [ˈdeprəkeɪtɪd]
