@@ -13,7 +13,7 @@ public class StringBufferDemo {
         System.out.println(stringBuffer.delete(5,6));
         System.out.println(stringBuffer.insert(5,","));
         System.out.println(stringBuffer.reverse());
-        stringBuffer.reverse().setCharAt(0,'H');
+        stringBuffer.reverse().setCharAt(6,'W');
         System.out.println(stringBuffer);
     }
 }

@@ -26,13 +26,15 @@ public class Human {
     }
 
 
+
     public static void main(String[] args) {
-        Human human = new Human("Tom", 'M', 19, 1.7, 56);
-        System.out.println(human.name);
-        System.out.println(human.age);
-        System.out.println(human.gender);
-        System.out.println(human.height);
-        System.out.println(human.weight);
+//        Human human = new Human("Tom", 'M', 19, 1.7, 56);
+//        System.out.println(human.name);
+//        System.out.println(human.age);
+//        System.out.println(human.gender);
+//        System.out.println(human.height);
+//        System.out.println(human.weight);
+
     }
 
     public void study() {
