@@ -2,6 +2,7 @@ package java1702.javase.io;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 
 /**
@@ -10,9 +11,9 @@ import java.io.InputStream;
  */
 public class InputStreamTest {
     public static void main(String[] args) {
-
+        InputStream inputStream = null;
         try {
-            InputStream inputStream = new FileInputStream("test");
+            inputStream = new FileInputStream("test");
 //            int i = inputStream.read();
 //            while (i != -1) {
 //                System.out.print((char) i);
@@ -21,12 +22,20 @@ public class InputStreamTest {
 //            }
 //            System.out.println((char)inputStream.read());
             int i;
-            while ((i = inputStream.read()) != -1){
+            while ((i = inputStream.read()) != -1) {
                 System.out.print((char) i);
             }
 
         } catch (java.io.IOException e) {
             e.printStackTrace();
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }
