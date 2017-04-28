@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var patt1 = new RegExp('e'); // pattern  模式
+        console.log(patt1.test("hello"));
+        var patt2 = new RegExp('l', 'g');//   g    global 全部
+        var result = patt2.exec("hello");
+        do {
+            console.log(result);
+            result = patt2.exec("hello");
+        } while (result != null);
+        var patt3 = /e/i;
+        console.log(patt3.test('HELLO'));
+        //        var patt4 = /w3schoool/i;
+        //        console.log('Visit W3School...'.match(patt4))
+        var patt4 = /w3school/i;
+        console.log('Visit W3School....'.match(patt4))
+
+    </script>
+</head>
+<body>
+<pre>
+
+</pre>
+</body>
+</html>
