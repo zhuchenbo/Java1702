@@ -10,12 +10,13 @@ public class E5 {
 
         System.out.println(getValue(d) );
     }
-    public static int getValue(double d){
+    private static int getValue(double d){
         if(!String.valueOf(d).contains(".")){
             return (int)d;
         }
         String[] ss=String.valueOf(d).split("\\.");
-        if(Integer.valueOf(ss[1].substring(0, 1)).intValue()<5){
+
+        if(Integer.valueOf(ss[1].substring(0, 1)) <5){
             return (int)Math.floor(d);// 取接近它的比它小的浮点数xx.0000  
         }
         else{
