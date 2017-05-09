@@ -38,7 +38,7 @@ private static final String IMAGE_URL = "网络文件地址";
             URL url = new URL(IMAGE_URL);
             try (
                     InputStream inputStream = url.openStream();
-                    OutputStream outputStream = new FileOutputStream("新建文件名")
+                    OutputStream outputStream = new FileOutputStream("新建文件名.png")
             ) {
                 System.out.println(inputStream.available());
                 int i;
