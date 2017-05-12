@@ -30,6 +30,7 @@ class AccountTest implements Runnable {
     private Account account;
 
     @Override
+
     public void run() {
         account.withdraw(1000);
 
